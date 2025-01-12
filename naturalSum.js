@@ -28,3 +28,14 @@ function findNaturalSum(n){
 }
 let addNaturalNum=findNaturalSum(10);
 console.log(addNaturalNum);
+
+//Natural Sum Using Recursion
+function findNaturalSumUsingRecursion(n){
+    if(n==1||n==0){
+        return 1;
+    }
+    return n+findNaturalSumUsingRecursion(n-1);
+}
+
+let addNaturalNumUsingRecursion=findNaturalSumUsingRecursion(15);
+console.log(addNaturalNumUsingRecursion)
